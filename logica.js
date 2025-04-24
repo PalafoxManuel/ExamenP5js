@@ -42,9 +42,15 @@ function draw() {
   // ¿Ya no quedan bloques que se puedan romper?
   const destructibles = blocks.filter(b => !b.unbreakable);
   if (!gameOver && destructibles.length === 0) {
-    victory  = true;
-    gameOver = true;
-    noLoop();
+    if (level < maxLevels) {
+      level++;
+      initLevel(level);
+      return;
+    } else {
+      victory  = true;
+      gameOver = true;
+      noLoop();
+    }
   }
 
   // Pantalla final (ganar o perder)
