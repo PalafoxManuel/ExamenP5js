@@ -16,7 +16,7 @@ Flecha Derecha: mover pala hacia la derecha.
 
 Lanzar la bola:
 
-La bola comienza “pegada” en el centro de la pala.
+La bola comienza pegada en el centro de la pala.
 
 Presiona Espacio para lanzarla.
 
